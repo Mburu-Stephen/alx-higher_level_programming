@@ -1,4 +1,8 @@
-We offer a truly innovative approach to education:        
-focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers.        
+#!/usr/bin/python3
+"""Provides a function to read and print a file"""
 
-A school every software engineer would have dreamt of!  
+
+def read_file(filename=""):
+    """Print the contents of a file"""
+    with open(filename, "r") as istream:
+        print(istream.read(), end="")
